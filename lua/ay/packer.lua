@@ -78,5 +78,7 @@ return require('packer').startup(function(use)
         ft = {'javascript', 'typescript', 'css', 'less', 'scss', 'graphql', 'markdown', 'vue', 'html'}
     }
 
+    use "lukas-reineke/indent-blankline.nvim"
+
 end)
 
