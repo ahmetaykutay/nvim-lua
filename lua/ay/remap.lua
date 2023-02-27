@@ -12,3 +12,5 @@ vim.keymap.set("n", "<leader>q", ":q<cr>")
 
 vim.keymap.set("n", "<leader>z", ":Prettier<cr>")
 
+vim.keymap.set("n", "<leader>i",':lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})<CR>')
+

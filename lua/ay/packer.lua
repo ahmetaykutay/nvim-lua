@@ -72,13 +72,13 @@ return require('packer').startup(function(use)
         end
     }
 
+    use "lukas-reineke/indent-blankline.nvim"
+
     use {
         'prettier/vim-prettier',
         run = 'yarn install',
         ft = {'javascript', 'typescript', 'css', 'less', 'scss', 'graphql', 'markdown', 'vue', 'html'}
     }
-
-    use "lukas-reineke/indent-blankline.nvim"
 
 end)
 
