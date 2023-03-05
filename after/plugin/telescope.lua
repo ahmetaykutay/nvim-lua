@@ -14,6 +14,7 @@ require("telescope").load_extension "file_browser"
 vim.api.nvim_set_keymap(
   "n",
   "<leader>e",
-  ":Telescope file_browser path=%:p:h select_buffer=true<cr>",
+  ":Telescope file_browser path=%:p:h select_buffer=true hidden=true<cr>",
   { noremap = true }
 )
+
