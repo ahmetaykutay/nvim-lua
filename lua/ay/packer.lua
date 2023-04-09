@@ -80,5 +80,7 @@ return require('packer').startup(function(use)
         ft = {'javascript', 'typescript', 'css', 'less', 'scss', 'graphql', 'markdown', 'vue', 'html'}
     }
 
+    use { 'smithbm2316/centerpad.nvim' }
+
 end)
 
