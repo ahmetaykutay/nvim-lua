@@ -82,5 +82,7 @@ return require('packer').startup(function(use)
 
     use { 'smithbm2316/centerpad.nvim' }
 
+    use { 'christoomey/vim-tmux-navigator' }
+
 end)
 
