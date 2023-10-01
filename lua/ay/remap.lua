@@ -17,3 +17,4 @@ vim.keymap.set("n", "<leader>i",':lua vim.diagnostic.open_float(nil, {focus=fals
 
 vim.api.nvim_set_keymap('n', '<leader>z', "<cmd>lua require'centerpad'.toggle{ leftpad = 30, rightpad = 20 }<cr>", { silent = true, noremap = true })
 
+vim.keymap.set("n", "<leader>I", ":CodeActionMenu<cr>")
