@@ -89,4 +89,5 @@ return require('packer').startup(function(use)
         cmd = 'CodeActionMenu',
     }
 
+    use 'm4xshen/autoclose.nvim'
 end)
