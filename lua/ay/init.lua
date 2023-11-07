@@ -1,4 +1,5 @@
 require('ay.remap')
 require('ay.settings')
-require('onedark').load()
+
+vim.cmd.colorscheme "catppuccin-macchiato"
 

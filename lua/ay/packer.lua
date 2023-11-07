@@ -12,8 +12,6 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
-    -- Using Packer
-    use { 'navarasu/onedark.nvim', as = 'onedark' }
 
     use {
         'nvim-treesitter/nvim-treesitter',
@@ -90,4 +88,6 @@ return require('packer').startup(function(use)
     }
 
     use 'm4xshen/autoclose.nvim'
+
+    use { "catppuccin/nvim", as = "catppuccin" }
 end)
