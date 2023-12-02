@@ -8,7 +8,8 @@ vim.keymap.set("x", "<leader>p", "\"_dp")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 vim.keymap.set("n", "<leader>w", ":w<cr>")
-vim.keymap.set("n", "<leader>q", ":q<cr>")
+vim.keymap.set("n", "<leader>Q", ":q<cr>")
+vim.keymap.set("n", "<leader>q", ":bw<cr>")
 
 vim.keymap.set("n", "<leader>fp", ":Prettier<cr>")
 vim.keymap.set("n", "<Leader>fo", ":lua vim.lsp.buf.format({formatting_options = { tabSize = 4, insertSpaces = true }})<CR>")
