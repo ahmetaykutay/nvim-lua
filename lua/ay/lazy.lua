@@ -78,7 +78,7 @@ local plugins = {
 
     {
         'nvim-lualine/lualine.nvim',
-        dependencies = { 'kyazdani42/nvim-web-devicons', opt = true }
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
     {
         'lewis6991/gitsigns.nvim',
@@ -114,7 +114,7 @@ local plugins = {
         cmd = 'CodeActionMenu',
     },
 
-    -- 'm4xshen/autoclose.nvim',
+    'm4xshen/autoclose.nvim',
 
     { "catppuccin/nvim", as = "catppuccin" },
 }
