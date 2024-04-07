@@ -22,9 +22,10 @@ local plugins = {
     {
         'nvim-treesitter/nvim-treesitter',
         build = ':TSUpdate',
+        lazy = false,
         ops = {
             -- A list of parser names, or "all" (the four listed parsers should always be installed)
-            ensure_installed = { "javascript", "typescript", "c", "lua", "vim" },
+            ensure_installed = { "javascript", "typescript", "c", "lua", "vim", "rust" },
 
             -- Install parsers synchronously (only applied to `ensure_installed`)
             sync_install = false,
@@ -90,6 +91,9 @@ local plugins = {
 
     {
         'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end,
         lazy = false,
     },
 
@@ -110,7 +114,7 @@ local plugins = {
         cmd = 'CodeActionMenu',
     },
 
-    'm4xshen/autoclose.nvim',
+    -- 'm4xshen/autoclose.nvim',
 
     { "catppuccin/nvim", as = "catppuccin" },
 }
