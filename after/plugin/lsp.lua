@@ -7,12 +7,12 @@ require('mason-lspconfig').setup({
     ensure_installed = { 'tsserver', 'rust_analyzer' },
     handlers = {
         lsp_zero.default_setup,
-        rust_analyzer = lsp_zero.noop,
         lua_ls = function()
             local lua_opts = lsp_zero.nvim_lua_ls()
             require('lspconfig').lua_ls.setup(lua_opts)
         end,
-    }
+        rust_analyzer = lsp_zero.noop,
+    },
 })
 
 lsp_zero.set_sign_icons({
@@ -34,13 +34,9 @@ vim.diagnostic.config({
     },
 })
 
--- require('lspconfig').rust_analyzer.setup({
---     procMacro = { enable = true },
--- })
-
 local cmp = require('cmp')
 local cmp_action = lsp_zero.cmp_action()
-local cmp_format = lsp_zero.cmp_format()
+lsp_zero.cmp_format()
 
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
@@ -87,9 +83,9 @@ lsp_zero.on_attach(function(client, bufnr)
 end)
 
 vim.g.rustaceanvim = {
-    server = {
-        capabilities = lsp_zero.get_capabilities()
-    },
+  server = {
+    capabilities = lsp_zero.get_capabilities()
+  },
 }
 
 lsp_zero.setup()

@@ -72,7 +72,6 @@ local plugins = {
             indent = { enable = true },
             ensure_installed = {
                 "bash",
-                "c",
                 "diff",
                 "html",
                 "javascript",
@@ -94,6 +93,7 @@ local plugins = {
                 "vimdoc",
                 "xml",
                 "yaml",
+                "rust",
             },
             incremental_selection = {
                 enable = true,
@@ -142,7 +142,6 @@ local plugins = {
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/cmp-buffer' },
     { 'hrsh7th/cmp-path' },
-    { 'saadparwaiz1/cmp_luasnip' },
     { 'hrsh7th/cmp-nvim-lua' },
     { 'L3MON4D3/LuaSnip' },
     { 'rafamadriz/friendly-snippets' },
