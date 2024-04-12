@@ -58,11 +58,6 @@ cmp.setup({
         ['<C-f>'] = cmp.mapping.scroll_docs(-5),
         ['<C-d>'] = cmp.mapping.scroll_docs(5),
     }),
-    snippet = {
-        expand = function(args)
-            require('luasnip').lsp_expand(args.body)
-        end,
-    },
 })
 
 lsp_zero.on_attach(function(client, bufnr)
