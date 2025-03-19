@@ -146,11 +146,11 @@ local plugins = {
     { 'rafamadriz/friendly-snippets' },
 
     {
-		-- https://github.com/hrsh7th/nvim-cmp
-		"hrsh7th/nvim-cmp",
-		commit = "b356f2c",
-		pin = true,
-	},
+        -- https://github.com/hrsh7th/nvim-cmp
+        "hrsh7th/nvim-cmp",
+        commit = "b356f2c",
+        pin = true,
+    },
 
     {
         'mrcjkb/rustaceanvim',
